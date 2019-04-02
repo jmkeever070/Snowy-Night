@@ -1,0 +1,599 @@
+.trunk {
+    position: fixed;
+    width: 30px;
+    height:50px;
+    background-color: #8B4513;
+}
+
+.tree-trunk-1 {
+    margin-top: 375px;
+    margin-left: 150px
+}
+
+.tree-trunk-2 {
+    margin-top: 400px;
+    margin-left: 550px
+}  
+
+.tree {
+  position: fixed;
+  width:0px;
+  height:0px;
+  background-color: transparent;
+}
+
+.tree-top-1 {
+  margin-top: 330px;
+  margin-left: 90px;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 50px solid green;
+  animation-name: covered;
+  animation-duration: 10s;
+  animation-iteration-count: infinite
+ }
+
+.tree-top-2 {
+  margin-top: 300px;
+  margin-left: 105px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 50px solid green;
+  animation-name: covered;
+  animation-duration: 10s;
+  animation-iteration-count: infinite
+}
+
+.tree-top-3 {
+  margin-top: 350px;
+  margin-left: 488px;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 50px solid green;
+  animation-name: covered-more;
+  animation-duration: 10s;
+  animation-iteration-count: infinite
+}
+
+.tree-top-4 {
+  margin-top: 325px;
+  margin-left: 503px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 50px solid green;
+  animation-name: covered-more;
+  animation-duration: 10s;
+  animation-iteration-count: infinite
+}
+
+@keyframes covered-more {
+  0% {
+    
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes covered {
+  0% {
+    
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.tent {
+      left: 240px;
+      bottom: 100px;
+      width: 65px;
+      height: 28px;
+      background: #DEB887;
+      position: fixed;
+      clip-path: polygon(50% 0%, 0% 100%,       80% 100%);
+      z-index: 2;
+}
+
+.tent::before {
+        content: "";
+        bottom: 0;
+        left: 50%;
+        width: 15px;
+        height: 12px;
+        background: #000000;
+        position: absolute;
+        transform: translateX(-75%);
+        clip-path: polygon(60% 0%, 0% 100%, 100% 100%);
+      }
+
+.tent-back {
+      background: #DEB887;
+      position: absolute;
+      width: 42px;
+      height: 30px;
+      transform: rotate(140deg);
+      left: 226px;
+      bottom: 110px;
+}
+
+.fire-base {
+  height: 15px;
+  width: 10px;
+  transform: rotate(90deg);
+  background: #FF8C00;
+  position: fixed;
+  border: 1px solid #696969;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  left: 310px;
+  bottom: 60px;
+}
+
+.fire-1 {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 9px solid #FFD700;
+  transform: rotate(98deg);
+  bottom: 76.5px;
+  left: 309px;
+  animation-name: burn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes burn {
+  0% {
+    border-bottom: 9px solid #FFD700,
+  }
+  25% {
+    border-bottom: 9px solid  #FFA500;
+  }
+  50% {
+    border-bottom: 9px solid #FF8C00;
+  }
+  75% {
+    border-bottom: 9px solid #FF4500;
+  }
+  100% {
+    border-bottom: 9px solid #FF0000;
+  }
+}
+
+.snow {
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+.snowed {
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+.snow-1 {
+    position: fixed;
+    margin-top:5%;
+    margin-left:5%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-2 {
+    position: fixed;
+    margin-top:3%;
+    margin-left:20%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-3 {
+    position: fixed;
+    margin-top:5%;
+    margin-left:29%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-4 {
+    position: fixed;
+    margin-top:10%;
+    margin-left:42%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-5 {
+    position: fixed;
+    margin-top:3%;
+    margin-left:50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-6 {
+    position: fixed;
+    margin-top:6%;
+    margin-left:55%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-7 {
+    position: fixed;
+    margin-top:3%;
+    margin-left:57%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-8 {
+    position: fixed;
+    margin-top:12%;
+    margin-left:60%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-9 {
+    position: fixed;
+    margin-top:10%;
+    margin-left:65%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-10 {
+    position: fixed;
+    margin-top:8%;
+    margin-left:75%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-11 {
+    position: fixed;
+    margin-top:14%;
+    margin-left:85%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+.snow-12 {
+    position: fixed;
+    margin-top:3%;
+    margin-left:89%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: falling;
+}
+
+
+.snow-13 {
+    position: fixed;
+    margin-top:7%;
+    margin-left:9%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-14 {
+    position: fixed;
+    margin-top:15%;
+    margin-left:15%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-15 {
+    position: fixed;
+    margin-top:5%;
+    margin-left:29%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-16 {
+    position: fixed;
+    margin-top:12%;
+    margin-left:38%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-17 {
+    position: fixed;
+    margin-top:8%;
+    margin-left:50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-18 {
+    position: fixed;
+    margin-top:17%;
+    margin-left:59%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-19 {
+    position: fixed;
+    margin-top:11%;
+    margin-left:59%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-20 {
+    position: fixed;
+    margin-top:18%;
+    margin-left:75%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-21 {
+    position: fixed;
+    margin-top:4%;
+    margin-left:69%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+.snow-22 {
+    position: fixed;
+    margin-top:9%;
+    margin-left:80%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: floating;
+}
+
+
+
+@keyframes falling {
+  0% {
+    top:0px;
+    left:0px;
+  }
+  10% {
+    top: 10%;
+    left: 5%;
+  }
+  20% {
+    top: 20%;
+    left: 0%;
+  }
+  30% {
+    top: 30%;
+    left: 5%;
+  }
+  40% {
+    top: 40%;
+    left: 0%;
+  }
+  50% {
+    top: 50%;
+    left: 5%;
+  }
+  60% {
+    top: 60%;
+    left: 0%;
+  }
+  70% {
+    top: 70%;
+    left: 5%;
+  }
+  80% {
+    top: 75%;
+    left: 0%;
+    }
+}
+
+
+@keyframes floating {
+  0% {
+    top:0px;
+    left:0px;
+  }
+  10% {
+    top: 15%;
+    right: 9%;
+  }
+  20% {
+    top: 20%;
+    left: 9%;
+  }
+  30% {
+    top: 25%;
+    right: 5%;
+  }
+  40% {
+    top: 30%;
+    left: 5%;
+  }
+  50% {
+    top: 35%;
+    right: 10%;
+  }
+  60% {
+    top: 40%;
+    left: 10%;
+  }
+  70% {
+    top: 45%;
+    right: 9%;
+  }
+  80% {
+    top: 50%;
+    left: 5%;
+    }
+}
+
+
+.stars {
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+
+
+  .s-1 {
+    margin-top: 5%; 
+    margin-left: 3%;
+    animation-name: twinkle;
+    top:0;
+    left:25px;
+    height:20px;
+    width: 20px;
+  }
+
+  .s-2 {
+    margin-top: 2%;
+    margin-left: 10%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .s-3 {
+    margin-top: -5%;
+    margin-left: 20%;
+    animation-duration: 2s;
+    animation-name: twinkle;
+    height: 25px;
+    width: 25px;
+  }
+
+  .s-4 {
+    margin-top: 0%;
+    margin-left: 45%;
+    animation-name: twinkle;
+  }
+
+  .s-5 {
+    margin-top: 5%;
+    margin-left: 60%;
+    animation-duration: 2s;
+    animation-name: twinkle;
+  }
+
+  .s-6 {
+    margin-top: -10%;
+    margin-left: 75%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+@keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  .moon {
+    position: fixed;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 5px 0px white;
+    height:80px;
+    width: 80px;
+    bottom: 800px;
+    right: 75px;
+    top: 125px;
+
+  }
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, black, #00008B, #000080, white,white, white);
+  }
+
